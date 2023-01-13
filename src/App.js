@@ -1,3 +1,4 @@
+import Home from './pages/Home.Jsx';
 import { Router, Route, Routes  } from 'react-router-dom';
 import './App.css';
 
@@ -6,13 +7,8 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/users" element={<Users />}>
-            <Route path="/" element={<UsersList />} />
-            <Route path=":userId" element={<User />} />
-          </Route>
-          <Route path="*" element={<NotFound />} />
+          <Route path="/home" element={<Home />} />
+      
         </Routes>
       </Router>
     </div>
